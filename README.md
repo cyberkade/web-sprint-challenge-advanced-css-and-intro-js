@@ -35,7 +35,7 @@ Please answer the following questions below, you may edit the readme file to inc
     -With functions, you don't have to write out code over and over again. You can create a task that can be used multiple times, and then call that task with the function. Writing functions also helps your code be reusable.
 
 5. How do you access a key inside of an object inside of an array?
-    array[objectIndex]['objectKey']
+    -array[objectIndex]['objectKey']
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
