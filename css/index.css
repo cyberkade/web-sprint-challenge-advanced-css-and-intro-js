@@ -171,6 +171,7 @@ button:hover{
         justify-content: space-around;
         width:50%;
         margin:0 auto;
+        margin-bottom: 50px;
     }
     .artist{
         width:100%;
