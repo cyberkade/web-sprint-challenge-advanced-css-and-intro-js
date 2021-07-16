@@ -23,10 +23,20 @@ Commit your code regularly and meaningfully.
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe acessibility on the web to someone new to programming?
-2. Talk about 3 different things you can do to ensure your website is accessible. 
+    - Accessibility is making your website as useable by as many people as possible. This means people with disabilities are able to comprehend, navigate, and interact you're site.
+
+2. Talk about 3 different things you can do to ensure your website is accessible.
+    -To make my site accessible I  add alt attributes, write semantic HTML, and use ARIA attirbutes where ,or if, needed.
+
 3. How would you explain the concept of a variable to someone new to programming?
+    -A variable holds a value that you create. You can then use this variable in place of that value, to do whatever you want. Variables make storing data easier, as you can assign a name to the data, and then reference that data at any time by using it's name.
+
 4. What is the purpose of using functions in code?
+    -With functions, you don't have to write out code over and over again. You can create a task that can be used multiple times, and then call that task with the function. Writing functions also helps your code be reusable.
+
 5. How do you access a key inside of an object inside of an array?
+    -array[objectIndex]['objectKey']
+    to access something inside of an arry oyu need [] and the index of that item. To access an object key inside of an object you can use the . method (.objectKey) or the bracket method   (['objectKey']). The bracket method requires quotes around the key. This is due to an object turning every key into a string when the object is created.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
