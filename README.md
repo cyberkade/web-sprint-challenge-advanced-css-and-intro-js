@@ -36,6 +36,7 @@ Please answer the following questions below, you may edit the readme file to inc
 
 5. How do you access a key inside of an object inside of an array?
     -array[objectIndex]['objectKey']
+    to access something inside of an arry oyu need [] and the index of that item. To access an object key inside of an object you can use the . method (.objectKey) or the bracket method   (['objectKey']). The bracket method requires quotes around the key. This is due to an object turning every key into a string when the object is created.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
