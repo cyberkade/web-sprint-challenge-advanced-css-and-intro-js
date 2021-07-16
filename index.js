@@ -206,7 +206,7 @@ const artists = [
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Practice accessing data above by console.log-ing following items:
 (no functions needed) */
-
+console.log('TASK 1')
 //(1) Name of the first artist (0th index) in the array
 console.log(artists[0])
 
@@ -220,6 +220,7 @@ console.log(artists[2])
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
 artists[8].name = 'Vicent Van Gogh';
+console.log('TASK 2')
 console.log(artists[8]);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
@@ -233,6 +234,8 @@ Example, if getArtistByIndex is invoked with the artists array and the number 0,
 function getArtistByIndex(arr, index) {
   return `the artist at index ${index} is ${arr[index].name}`
 }
+
+console.log('TASK 3')
 console.log(getArtistByIndex(artists,0))
 
 
@@ -256,9 +259,10 @@ function get20s(arr) {
       }
     }
   }
-  // console.log(newArray);
+  console.log(newArray);
   return newArray;
 }
+console.log('TASK 4')
 get20s(artists);
 
 
@@ -271,10 +275,13 @@ Use removeArtist to do the following:
 
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(arr, index) {
+  arr.splice(index,1);
+  console.log(arr.length);
+  return arr.length;
 }
-
+console.log('TASK 5');
+removeArtist(artists, 0);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -292,10 +299,21 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(arr) {
+  const newArtist = { 
+    id: 20,
+    name: 'Kade Griffith', 
+    years: '2000 - present',
+    genre: 'Web Design', 
+    nationality: 'Puerto Rican/Irish',
+    bio: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum fugit quasi laboriosam provident culpa fuga qui labore dicta dignissimos quae, repellendus, quo aperiam. Facere atque exercitationem quis est, similique dolorum!'
+  }  
+  arr.push(newArtist);
+  console.log(newArtist);
+  return arr;
 }
-
+console.log('TASK 6');
+addArtist(artists);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -305,10 +323,18 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/) {
-  /*Your Code Here*/
+function lotsOfArt(arr) {
+  const newArray = []
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i].paintings > 100){
+      newArray.push(arr[i].name);
+    }
+  }
+  console.log(newArray);
+  return newArray;
 }
-
+console.log('TASK 7');
+lotsOfArt(artists);
 
 /* ***** END OF TASKS ***** */
 
